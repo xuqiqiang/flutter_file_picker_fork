@@ -1,3 +1,15 @@
+## 4.6.1
+
+#### iOS
+Handle `UTTypeCreatePreferredIdentifierForTag` returning `NULL`. This prevents a crash observed
+on the iOS simulator on Apple Silicon ([#1040](https://github.com/miguelpruivo/flutter_file_picker/issues/783)).
+
+## 4.6.0
+
+#### iOS
+Add conditional compilation of media, audio and document pickers for iOS.
+This prevents error messages for permissions (NSPhotoLibraryUsageDescription, NSAppleMusicUsageDescription, etc.) when publishing to app store connect, in case you don't need either category. This addresses [#783](https://github.com/miguelpruivo/flutter_file_picker/issues/783) in a different way.
+
 ## 4.5.2
 
 #### Android
