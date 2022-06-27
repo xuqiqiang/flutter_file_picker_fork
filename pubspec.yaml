@@ -3,7 +3,7 @@ description: A package that allows you to use a native file explorer to pick sin
 homepage: https://github.com/xuqiqiang/flutter_file_picker_fork
 repository: https://github.com/xuqiqiang/flutter_file_picker_fork
 issue_tracker: https://github.com/xuqiqiang/flutter_file_picker_fork/issues
-version: 4.6.1
+version: 4.6.2
 
 dependencies:
   flutter:

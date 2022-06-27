@@ -1,3 +1,8 @@
+## 4.6.2
+
+#### Desktop (Windows)
+Modify the file suffix.
+
 ## 4.6.1
 
 #### iOS

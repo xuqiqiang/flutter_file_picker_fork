@@ -184,11 +184,11 @@ class FilePickerWindows extends FilePicker {
       case FileType.custom:
         return 'Files (*.${allowedExtensions!.join(',*.')})\x00*.${allowedExtensions.join(';*.')}\x00\x00';
       case FileType.image:
-        return 'Images (*.bmp,*.gif,*.jpeg,*.jpg,*.png)\x00*.bmp;*.gif;*.jpeg;*.jpg;*.png\x00\x00';
+        return 'Images (*.jpg,*.jpeg,*.png)\x00*.jpg;*.jpeg;*.png\x00\x00';
       case FileType.media:
-        return 'Videos (*.avi,*.flv,*.mkv,*.mov,*.mp4,*.mpeg,*.webm,*.wmv)\x00*.avi;*.flv;*.mkv;*.mov;*.mp4;*.mpeg;*.webm;*.wmv\x00Images (*.bmp,*.gif,*.jpeg,*.jpg,*.png)\x00*.bmp;*.gif;*.jpeg;*.jpg;*.png\x00\x00';
+        return 'Videos (*.mp4,*.3gp,*.mov,*.mkv,*.vob)\x00*.mp4;*.3gp;*.mov;*.mkv;*.vob\x00Images (*.jpg,*.jpeg,*.png)\x00*.jpg;*.jpeg;*.png\x00\x00';
       case FileType.video:
-        return 'Videos (*.avi,*.flv,*.mkv,*.mov,*.mp4,*.mpeg,*.webm,*.wmv)\x00*.avi;*.flv;*.mkv;*.mov;*.mp4;*.mpeg;*.webm;*.wmv\x00\x00';
+        return 'Videos (*.mp4,*.3gp,*.mov,*.mkv,*.vob)\x00*.mp4;*.3gp;*.mov;*.mkv;*.vob\x00\x00';
       default:
         throw Exception('unknown file type');
     }
