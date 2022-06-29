@@ -1,3 +1,9 @@
+## 4.6.3
+
+#### iOS
+Fix podspec error.
+
+
 ## 4.6.2
 
 #### Desktop (Windows)
