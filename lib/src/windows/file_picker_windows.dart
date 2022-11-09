@@ -186,9 +186,9 @@ class FilePickerWindows extends FilePicker {
       case FileType.image:
         return 'Images (*.jpg,*.jpeg,*.png)\x00*.jpg;*.jpeg;*.png\x00\x00';
       case FileType.media:
-        return 'Videos (*.mp4,*.3gp,*.mov,*.mkv,*.vob)\x00*.mp4;*.3gp;*.mov;*.mkv;*.vob\x00Images (*.jpg,*.jpeg,*.png)\x00*.jpg;*.jpeg;*.png\x00\x00';
+        return 'Videos (*.mp4,*.3gp,*.mov,*.mkv)\x00*.mp4;*.3gp;*.mov;*.mkv\x00Images (*.jpg,*.jpeg,*.png)\x00*.jpg;*.jpeg;*.png\x00\x00';
       case FileType.video:
-        return 'Videos (*.mp4,*.3gp,*.mov,*.mkv,*.vob)\x00*.mp4;*.3gp;*.mov;*.mkv;*.vob\x00\x00';
+        return 'Videos (*.mp4,*.3gp,*.mov,*.mkv)\x00*.mp4;*.3gp;*.mov;*.mkv\x00\x00';
       default:
         throw Exception('unknown file type');
     }
